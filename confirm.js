@@ -1,8 +1,10 @@
 
 //           // Send data to Telegram
-          // const telegramToken = "7438673598:AAEScuKPGsJAGn5fFiXavF_2vH-fNfSBQVg";
-          // const chatId = "-1002230132257"; // Replace with your chat ID
+          // const telegramToken = "7240758563:AAHc_bUtGSBHWNPRAXuNxSZ4c4zEWH6Lcz0";
+          // const chatId = "-4209186125"; // Replace with your chat ID
 //           const telegramURL = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
+// https://api.telegram.org/bot7240758563:AAHc_bUtGSBHWNPRAXuNxSZ4c4zEWH6Lcz0/getUpdates
+//  https://script.google.com/macros/s/AKfycbwN1O8tDesNdZ525OhKue1zKMh76z8iBZg7j64I4OzZ2-LF6V6wTX44NjLHefgtfnLh/exec
 
 document.addEventListener("DOMContentLoaded", function () {
   const route = localStorage.getItem("dropdown");
@@ -41,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("confirm").addEventListener("click", function () {
     const scriptURL =
-      "https://script.google.com/macros/s/AKfycbw7r8EkmflipZKr6BS2ZqpiPEPQqVswPF3s6Uk78Jb_2fcw3Fsz7k8jQjudXBCnPuDzdA/exec";
+      "https://script.google.com/macros/s/AKfycbwN1O8tDesNdZ525OhKue1zKMh76z8iBZg7j64I4OzZ2-LF6V6wTX44NjLHefgtfnLh/exec";
     const formData = new FormData();
 
     formData.append("दिनांक ", date); // Add today's date to form data
@@ -65,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function () {
       .then((response) => {
         if (response.ok) {
           // Send data to Telegram
-          const telegramToken = "7438673598:AAEScuKPGsJAGn5fFiXavF_2vH-fNfSBQVg";
-          const chatId = "-1002230132257"; // Replace with your chat ID
+          const telegramToken = "7240758563:AAHc_bUtGSBHWNPRAXuNxSZ4c4zEWH6Lcz0";
+          const chatId = "-4209186125"; // Replace with your chat ID
           const telegramURL = `https://api.telegram.org/bot${telegramToken}/sendMessage`;
 
           let message = "";
