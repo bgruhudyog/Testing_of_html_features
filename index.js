@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function () {
     localStorage.setItem('old', old);
     localStorage.setItem('date', currentDate);
 
-    window.location.href = 'confirmation.html';
+    window.location.href = 'confirmation/confirmation.html';
   });
 
   displayDateAndDay();
