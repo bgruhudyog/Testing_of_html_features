@@ -1,59 +1,63 @@
-body,html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-      }
-      .bganimated {
-        /* height: 100vh; */
-        width: 400px;
-        background: linear-gradient(45deg, rgb(144, 138, 138), rgb(0, 0, 0));
-        background-size: 300% 300%;
-        animation: color 12s ease-in-out infinite;
-      }
-      @keyframes color {
-        0% {
-          background-position: 0 50%;
-        }
-        50% {
-          background-position: 100% 50%;
-        }
-        75% {
-          background-position: 50% 100%;
-        }
-        100% {
-          background-position: 0 50%;
-        }
-      }
-      .glass {
-        background: linear-gradient(
-          135deg,
-          rgba(255, 255, 255, 0.1),
-          rgba(255, 255, 255, 0)
-        );
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-      }
+body {
+  width: 400px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+* { 
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-      .container {
-        max-width: 400px;
-        height: auto;
-        overflow: hidden;
-      }
+.bganimated {
+  /* height: 100vh; */
+  width: 400px;
+  background: linear-gradient(45deg, rgb(144, 138, 138), rgb(0, 0, 0));
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  75% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
 
-      #total,
-      #remaining {
-        min-height: 24px; /* Adjust this value based on your font size */
-      }
-      .khand-regular {
-        font-family: "Khand", sans-serif;
-        font-weight: 600;
-        font-style: normal;
-      }
+.container {
+  max-width: 400px;
+  height: auto;
+  overflow: hidden;
+}
+
+#total,
+#remaining {
+  min-height: 24px; /* Adjust this value based on your font size */
+}
+.khand-regular {
+  font-family: "Khand", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
